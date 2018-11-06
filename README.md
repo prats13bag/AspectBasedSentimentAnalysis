@@ -17,8 +17,8 @@ Aspect: "service", Polarity: "negative"
         a. replace '[comma]' with actual ','; replace multiple spaces, special characters with single space; convert into lower case; remove stopwords and tokenize
         b. consider words of sentence with window size = 5 i.e consider the sentence composed of 5 words left and right of the aspect term in the sentence along with aspect term. In case of multiple occurences of aspect term, consider 5 words left of first occurence of aspect term and five words right of last occurence of aspect term and all the words in between. In case the aspect term is missing then consider the entire sentence as it is.
         c. Learn the vocabulary dictionary and return term-document matrix using fit_transform on bigram count vectorizer
- - Sample a training set from training dataset while holding out 25% of this training data for testing (evaluating) our classifier.
- - Train the classifiers one by one this train and test data of the training dataset and obtained classification report using 10-fold cross validation
+ - Sample a training set from 'training dataset' while holding out 25% of this 'training dataset' for testing (evaluating) our classifier.
+ - Train the classifiers one by one on this train and test data of the training dataset and obtain classification report using 10-fold cross validation
  - Pick the classifier which performed the best on this training dataset and use it to predict the class label for the given test dataset.
  - The labels generated will be written in a new text file separated by ";;" aside the "example_id" (unique id for each sentence provided as part of dataset). Also a graph representing the number of positice, negative, and neutral class predicted is plotted.
 
