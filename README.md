@@ -11,7 +11,7 @@ The overall sentiment from a machine's perspective is "neutral" in this particul
 Aspect: "food", Polarity: "positive"<br>
 Aspect: "service", Polarity: "negative"
 
-### _2. Brief desctiption about the implemetation steps_
+### _2. Brief description about the implemetation steps_
  - Read the data as pandas dataframes
  - Perform data preprocessing 
         a. replace '[comma]' with actual ','; replace multiple spaces, special characters with single space; convert into lower case; remove stopwords and tokenize
